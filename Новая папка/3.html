@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="5.js"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Lada</title>
+</head>
+<link rel="stylesheet" type="text/css" href="4.css">
+<link rel="stylesheet" type="text/php href="6.php>
+<script type="text/javascript">
+function validatePhone(formName){
+ let regex = /^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$/;
+ return regex.test(formName);
+}
+// Вызов функции
+let formName = '89000000000';
+ 
+if (!validatePhone(formName)){
+  arlet('Не соответствует');
+}else{
+  arlet('Соответствует');
+}
+</script>
+<body>
+<a href="#popup" class="header__phone popup-link">Lolo</a>
+<div id="popup" class="popup">
+	<div class="popup_body">
+		<div class="popup_content">
+			<a href="#" class="popup_close">x</a>
+			<div class="popup_title"></div>
+			<div class="popup_text">
+				<div class="form">
+					<form action="#" id="form" class="form__body"></form>
+					<h1 class="form__title">Отправте нам свои контактные данные!</h1>
+					<div class="from__item">
+						<label for="formName" class="form__label">Номер телефона:</label>
+						<input type="formName" type="text" name="name" class="form__input _req _number">
+						<button type="submit" class="form__button">Отправить</button>
+					</div>
+			</div>
+</body>
+</html>
